@@ -11,3 +11,6 @@ docker run -it --rm --name my-running-app danubio/my-golang-app
 
 To push a new tag to this repository,
 docker push danubio/my-golang-app:tagname
+
+Link repository:
+https://hub.docker.com/repository/docker/danubio/my-golang-app
