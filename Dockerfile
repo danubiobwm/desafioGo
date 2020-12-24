@@ -1,9 +1,10 @@
-FROM golang:alpine as builder
+FROM golang:latest AS builder
 
 WORKDIR /go/src/app
-COPY . .
+COPY ./app/main.go .
 
-RUN go get -d -v ./...
-RUN go install -v ./...
+RUN go build -ldflags "-w"
 
-CMD ["app"]
+FROM scratch
+COPY --from=builder /go/src/app/app .
+ENTRYPOINT ["./app"]
