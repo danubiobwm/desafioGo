@@ -1,16 +1,18 @@
+## Tamanho da Image 
+REPOSITORY                   TAG                   IMAGE ID       CREATED         SIZE
+danubio/desafio-golang-app   latest                ae7ae1ec9e64   2 minutes ago   1.53MB
+
+
 run
-docker build -t my-golang-app .
-
-docker build -t danubio/my-golang-app . 
+docker build -t danubio/desafio-golang-app .
 
 run
-docker run -it --rm --name my-running-app my-golang-app
 
-docker run -it --rm --name my-running-app danubio/my-golang-app
+docker run -it --rm --name my-running-app danubio/desafio-golang-app .
 
 
 To push a new tag to this repository,
-docker push danubio/my-golang-app:tagname
+docker push danubio/desafio-golang-app:tagname
 
 Link repository:
-https://hub.docker.com/repository/docker/danubio/my-golang-app
+https://hub.docker.com/repository/docker/danubio/desafio-golang-app
